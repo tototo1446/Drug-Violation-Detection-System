@@ -17,8 +17,8 @@ def app():
         # 辞書.csvと成分名.csvの内容を読み込む
         # これらのファイルはアプリケーションに組み込まれているか、あるいはアクセス可能なパスに配置されている必要があります。
         # 以下のパスは環境に合わせて適宜調整してください。
-        dict_df = pd.read_csv('辞書.csv')
-        component_df = pd.read_csv('成分名.csv')
+        dict_df = pd.read_csv('MyStreamlitApp/辞書.csv')
+        component_df = pd.read_csv('MyStreamlitApp/成分名.csv')
 
         all_detected_results = []
         for url in urls:
